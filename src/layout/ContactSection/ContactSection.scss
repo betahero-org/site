@@ -1,0 +1,80 @@
+@use "src/styles/mixins" as *;
+
+// Inner section
+:global(#contact-section .page-section-inner) {
+    @include flex($direction: column, $align: center);
+    text-align: center;
+    overflow: hidden;
+}
+.contact-section {
+    @include flex($direction: column, $justify: center, $align: center);
+    position: relative;
+    inline-size: 80vw;
+    block-size: 100%;
+    text-align: center;
+}
+
+input,
+textarea,
+input[type="submit"],
+input::focus-inner {
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    box-shadow: none !important;
+        &:focus, &:hover{
+            border:none;
+            box-shadow: none;
+            outline: none;
+        }
+}
+
+textarea {
+    resize: none;
+}
+
+.contact-section form{
+    background-color: var(--fds-solid-background-base);
+    padding: 4em 20%;
+    border-radius: 10px;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: border-color .2s;
+        &:focus{
+            color: #666;
+            border-color: 1px solid #666;
+        }
+}
+
+.label {
+    width: 100%;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.button {
+    color: #fff !important;
+    border-color: #06f;
+    background-color: #06f;
+    text-decoration: none !important;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold !important;
+    letter-spacing: normal;
+    line-height: normal;
+    padding: 12px 24px;
+    text-transform: none;
+}
