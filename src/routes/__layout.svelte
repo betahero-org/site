@@ -109,7 +109,14 @@
   <meta content="@betahero_org" name="twitter:creator">
 
   {#if !dev && $page.url.host === "betahero.org"}
-
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPM1GH2RL5"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PPM1GH2RL5');
+    </script>
   {/if}
 </svelte:head>
 

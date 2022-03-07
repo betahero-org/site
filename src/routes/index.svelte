@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Files • Home" />
+	<Metadata title="BetaHero • Home" />
 </svelte:head>
 
 <HeroSection />
