@@ -62,8 +62,9 @@
 
 <PageSection id="hero-section">
 	<div class="hero-left">
-		<h1>Files</h1>
-		<p>A modern file explorer that pushes the boundaries of the platform.</p>
+    <h1>Heroes</h1>
+		<h2>aren't born they are made. </h2>
+		<p>We are a nonprofit designed to inspire, educate and mentor youth through technology for the heroes of tomorrow.</p>
 		<div class="buttons-spacer">
 			<div class="split-button">
 				<Button

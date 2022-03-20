@@ -122,7 +122,7 @@
   <div class="column">
     <p>Contribute to BetaHero</p>
     <Button variant="hyperlink" {...externalLink}
-            href="https://github.com/{links.github.owner}/{links.github.repo}/issues/new"
+            href="https://github.com/{links.github.repo}/{links.github.siteRepo}/issues/new"
     >
       Give Feedback
     </Button>
@@ -137,13 +137,13 @@
 
     <p>Contribute to this site</p>
     <Button variant="hyperlink" {...externalLink}
-            href="https://github.com/{links.github.owner}/{links.github.siteRepo}/"
+            href="https://github.com/{links.github.repo}/{links.github.siteRepo}/"
     >
       GitHub Repo
     </Button>
 
     <Button variant="hyperlink" {...externalLink}
-            href="https://github.com/{links.github.owner}/{links.github.siteRepo}/issues/new"
+            href="https://github.com/{links.github.repo}/{links.github.siteRepo}/issues/new"
     >
       Found a bug?
     </Button>

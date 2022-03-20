@@ -13,6 +13,4 @@
 
 <FeaturesSection />
 
-<ThemesSection />
-
 <CommunitySection />

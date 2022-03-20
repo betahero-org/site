@@ -26,6 +26,7 @@
 :root {
   --font-family-sans-serif: "Segoe UI Variable Display", "Segoe UI", "Inter", sans-serif;
   --font-family-monospace: "Cascadia Code", "Fira Code", "Consolas", monospace;
+
 }
 
 /*
@@ -37,6 +38,15 @@
 
     --mica-tint: 0, 0%, 95%;
     --mica-tint-opacity: 0.8;
+
+    --fds-accent-default: hsl(240, 55%, 46%);
+    --fds-accent-secondary: hsl(231, 45%, 42%);
+    --fds-accent-tertiary: hsl(266, 76%, 45%);
+    --fds-accent-text-primary: var(--fds-accent-default);
+    --fds-accent-text-tertiary: var(--fds-accent-secondary);
+    --fds-text-primary: var(--fds-accent-default);
+    --fds-text-tertiary: hsl(266, 76%, 45%);
+    --fds-text-secondary: hsl(266, 76%, 45%);
   }
 }
 
@@ -49,16 +59,25 @@
 
     --mica-tint: 0, 0%, 13%;
     --mica-tint-opacity: 0.8;
+
+    --fds-accent-default: hsl(232, 36%, 53%);
+    --fds-accent-secondary: hsl(231, 45%, 42%);
+    --fds-accent-tertiary: hsl(266, 76%, 45%);
+    --fds-accent-text-primary: var(--fds-accent-default);
+    --fds-accent-text-tertiary: var(--fds-accent-secondary);
+    --fds-text-primary: var(--fds-accent-default);
+    --fds-text-tertiary: hsl(274, 60%, 50%);
+    --fds-text-secondary: hsl(274, 60%, 50%);
   }
 }
 
 /*
  * Theme Colors
- * #3536B8
- * #3B499D
- * #5d68b3
- * #661BCA
- * #8A34CD
+ * #3536B8 hsl(240, 55%, 46%);
+ * #3B499D hsl(231, 45%, 42%);
+ * #5d68b3 hsl(232, 36%, 53%);
+ * #661BCA hsl(266, 76%, 45%);
+ * #8A34CD hsl(274, 60%, 50%);
  *
  */
 

@@ -102,7 +102,7 @@
   >
   <meta content="Betahero Community" name="author">
 
-  <meta content="#005fb8" name="theme-color">
+  <meta content="#3536B8" name="theme-color">
 
   <meta content="summary_large_image" name="twitter:card">
   <meta content="@betahero_org" name="twitter:site">
