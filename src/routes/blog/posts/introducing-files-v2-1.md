@@ -69,4 +69,4 @@ everyone. We invite you to submit your feedback through our GitHub repository.
 
 Download from
 the [Microsoft Store]({'https://click.linksynergy.com/deeplink?id=pVFXwNFwveg&mid=24542&murl=https%3A%2F%2Fwww.microsoft.com%2Fstore%2Fapps%2F9NGHP3DX8HDX'})
-|| See Files on [GitHub](https://github.com/files-community/Files)
+|| See Files on [GitHub](https://github.com/betahero-org/site)

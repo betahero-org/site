@@ -40,7 +40,7 @@
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="/branding/logo-dark.svg">
         <source media="(prefers-color-scheme: light)" srcset="/branding/logo-light.svg">
-        <img alt="Files logo" height="32" src="/branding/logo-light.svg" width="32">
+        <img alt="BetaHero logo" height="32" src="/branding/logo-light.svg" width="32">
       </picture>
       BetaHero
     </a>
@@ -120,7 +120,7 @@
     </Button>
   </div>
   <div class="column">
-    <p>Contribute to Files</p>
+    <p>Contribute to BetaHero</p>
     <Button variant="hyperlink" {...externalLink}
             href="https://github.com/{links.github.owner}/{links.github.repo}/issues/new"
     >

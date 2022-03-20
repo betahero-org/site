@@ -10,12 +10,12 @@ export type ContributorData = {
   type: "User" | "Bot";
 };
 
-// Returns a list of 35 paged contributors to the files-community/files repository
+// Returns a list of 35 paged contributors to the betahero-org/site repository
 export const getContributors: (
   pageNumber: number
 ) => Promise<ContributorData[]> = async (pageNumber = 0) =>
   await fetch(
-    `https://api.github.com/repos/${repo}/${siteRepo}/contributors?per_page=35&page=${pageNumber}`
+    `https://api.github.com/sponsors/${repo}/${siteRepo}/sponsorships?per_page=35&page=${pageNumber}`
   )
     // Parse body to object
     .then(result => result.json())

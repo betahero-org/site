@@ -9,7 +9,7 @@
 ### 2: Clone the repository.
 
 ```ps
-git clone https://github.com/files-community/Files
+git clone https://github.com/betahero-org/site
 ```
 
 This will create a local copy of the repository.

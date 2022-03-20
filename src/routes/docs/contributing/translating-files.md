@@ -5,7 +5,7 @@
 - Ensure you have Visual Studio 2019 and
   the [Multilingual App Toolkit extension](https://marketplace.visualstudio.com/items?itemName=MultilingualAppToolkit.MultilingualAppToolkit-18308)
   .
-- Fork and clone the Files [repository](https://github.com/files-community/files/).
+- Fork and clone the Files [repository](https://github.com/betahero-org/site/).
 - Open in VS 2019.
 - Right-click on the `Files (Universal Windows)` project.
 - Select Multilingual App Toolkit > Add translation language.

@@ -1,5 +1,5 @@
 name: Feature Request
-description: Request a new feature for the Files website
+description: Request a new feature for the BetaHero website
 labels: [feature_request]
 body:
   - type: checkboxes
