@@ -8,86 +8,30 @@
   import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
   import HeartFill from "@fluentui/svg-icons/icons/heart_24_filled.svg?raw";
 
-  type WaystoContribute = "Donate" | "Volunteer" | "Sponsor";
-  const waystoContribute: toContribute[] = ["Donate", "Volunteer", "Sponsor"];
-
-  type DownloadSource = "Microsoft Store" | "Winget (CLI)" | "Sideload Package" | "Sideload Package (Preview)";
-  const downloadSources: DownloadSource[] = ["Microsoft Store", "Winget (CLI)", "Sideload Package", "Sideload Package (Preview)"];
+  type WaystoContribute = "Give a Donation" | "Volunteer Your Time" | "Become a Sponsor";
+  const waystoContribute: toContribute[] = ["Give a Donation", "Volunteer Your Time", "Become a Sponsor"];
 
   // Check the user agent for a windows install
   let isWindows: boolean;
 
   let wingetDialogOpen = false;
-  let wingetCommandCopied = false;
 
   let isDownloadDropdownOpen = false;
 
-  let currentWaystoContribute: WaystoContribute = "Donate"
-
   // Group bindings
-  // let currentDownloadSource: DownloadSource = "Microsoft Store";
-  // const getStoreUrl = () => isWindows
-  //   ? `ms-windows-store://pdp/?ProductId=${ links.storeId }&mode=mini`
-  //   : `https://www.microsoft.com/en-us/p/files/${ links.storeId }`;
-  // $: sideloadLink = `/download/${ currentDownloadSource !== "Sideload Package (Preview)" ? "stable" : "preview" }`;
-  // $: downloadLink = currentDownloadSource === "Microsoft Store" ? getStoreUrl() : sideloadLink;
-
-  // const copyWingetCommand = () => {
-  //   navigator.clipboard.writeText("winget install -e 9NGHP3DX8HDX");
-  //   wingetCommandCopied = true;
-  //   setTimeout(() => {
-  //     wingetCommandCopied = false;
-  //   }, 500);
-  // };
+  let currentWaystoContribute: WaystoContribute = "Give a Donation"
 
   const getStoreUrl = () => isWindows
     ? `ms-windows-store://pdp/?ProductId=${ links.storeId }&mode=mini`
      : `https://www.microsoft.com/en-us/p/files/${ links.storeId }`;
-  $: sideloadLink = `/download/${ currentWaystoContribute !== "Sideload Package (Preview)" ? "stable" : "preview" }`;
+  $: sideloadLink = `/donate/`;
   $: downloadLink = currentWaystoContribute === "Microsoft Store" ? getStoreUrl() : sideloadLink;
-  const copyWingetCommand = () => {
-    navigator.clipboard.writeText("winget install -e 9NGHP3DX8HDX");
-    wingetCommandCopied = true;
-    setTimeout(() => {
-      wingetCommandCopied = false;
-    }, 500);
-  };
 
   const changeWaystoContribute = (waystoContribute: WaystoContribute) => {
     currentWaystoContribute = waystoContribute;
     localStorage.setItem("waystoContribute", waystoContribute);
 
-    // if (waystoContribute !== "Winget (CLI)") {
-    //   window.open(waystoContribute === "Microsoft Store" ? getStoreUrl() : sideloadLink, "_blank");
-    // } else {
-    //   wingetDialogOpen = true;
-    // }
-
-    // isDownloadDropdownOpen = false;
   };
-
-  // const changeDownloadSource = (downloadSource: DownloadSource) => {
-  //   currentDownloadSource = downloadSource;
-  //   localStorage.setItem("downloadSource", downloadSource);
-
-  //   if (downloadSource !== "Winget (CLI)") {
-  //     window.open(downloadSource === "Microsoft Store" ? getStoreUrl() : sideloadLink, "_blank");
-  //   } else {
-  //     wingetDialogOpen = true;
-  //   }
-
-  //   isDownloadDropdownOpen = false;
-  // };
-
-  // onMount(async () => {
-  //   // Get the user's download preference
-  //   if (!localStorage.getItem("downloadSource")) {
-  //     localStorage.setItem("downloadSource", "Microsoft Store");
-  //   }
-  //   currentDownloadSource = (localStorage.getItem("downloadSource") ?? "Microsoft Store") as DownloadSource;
-
-  //   isWindows = navigator.userAgent.includes("Windows");
-  // });
 
 </script>
 
@@ -101,11 +45,11 @@
         <Button
           id="hero-download-button"
           variant="accent"
-          href={currentWaystoContribute !== "Donate" ? downloadLink : undefined}
+          href={currentWaystoContribute !== "Give a Donation" ? downloadLink : undefined}
           on:click={() => {
-            if (currentWaystoContribute === "Donate") wingetDialogOpen = true;
+            if (currentWaystoContribute === "Give a Donation") wingetDialogOpen = true;
           }}
-          {...(currentWaystoContribute !== "Donate" ? externalLink : undefined)}
+          {...(currentWaystoContribute !== "Give a Donation" ? externalLink : undefined)}
         >
           {@html Globe}
           <div class="hero-button-inner">
@@ -175,9 +119,6 @@
   paste the following command into a terminal of your choice:
   <TerminalCommand command="winget install -e 9NGHP3DX8HDX" />
   <svelte:fragment slot="footer">
-    <Button on:click={copyWingetCommand} variant="accent">
-      {wingetCommandCopied ? "Copied!" : "Copy"}
-    </Button>
     <Button on:click={() => (wingetDialogOpen = false)}>Close</Button>
   </svelte:fragment>
 </ContentDialog>

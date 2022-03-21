@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Files • Download {channel}" image="download" />
+	<Metadata title="BetaHero • Download {channel}" image="download" />
 </svelte:head>
 
 <slot />
@@ -29,7 +29,7 @@
 <main class="download-page">
 	<h1>Downloading...</h1>
 	<ProgressRing size={64} />
-	<p>Thank you for downloading Files! 🎉</p>
+	<p>Thank you for downloading! 🎉</p>
 	<p>If the download hasn't started yet, press
 		<a href="/appinstallers/Files.{channel}.appinstaller" download bind:this={link}>
 			here
@@ -46,7 +46,7 @@
 
 	<p>Want to support the creators of Files?</p>
 	<Button
-		href="https://github.com/sponsors/yaichenbaum"
+		href="https://github.com/sponsors/betahero-org"
 		variant="accent"
 		{...externalLink}
 	>
