@@ -8,10 +8,9 @@ import mdx from "@astrojs/mdx";
 import partytown from '@astrojs/partytown';
 import { remarkReadingTime } from './src/utils/frontmatter.js';
 import { SITE } from './src/config.mjs';
-import vercel from "@astrojs/vercel/serverless";
+import netlify from '@astrojs/netlify/edge-functions';
+// import netlify from "@astrojs/netlify/functions";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-// https://astro.build/config
 
 // https://astro.build/config
 export default defineConfig({
@@ -43,5 +42,5 @@ export default defineConfig({
     }
   },
   output: 'server',
-  adapter: vercel()
+  adapter: netlify()
 });
