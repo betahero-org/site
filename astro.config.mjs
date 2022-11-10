@@ -8,8 +8,8 @@ import mdx from "@astrojs/mdx";
 import partytown from '@astrojs/partytown';
 import { remarkReadingTime } from './src/utils/frontmatter.js';
 import { SITE } from './src/config.mjs';
-import netlify from '@astrojs/netlify/edge-functions';
-// import netlify from "@astrojs/netlify/functions";
+// import netlify from '@astrojs/netlify/edge-functions';
+import netlify from "@astrojs/netlify/functions";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://astro.build/config
