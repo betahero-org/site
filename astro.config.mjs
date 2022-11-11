@@ -1,13 +1,12 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
-
 import { defineConfig } from 'astro/config';
-
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import image from '@astrojs/image';
 import mdx from "@astrojs/mdx";
 import partytown from '@astrojs/partytown';
+import netlify from '@astrojs/netlify/functions';
 
 import { remarkReadingTime } from './src/utils/frontmatter.js';
 
@@ -53,4 +52,5 @@ export default defineConfig({
 			},
 		},
 	},
+  adapter: netlify(),
 });
