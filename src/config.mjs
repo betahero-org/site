@@ -7,8 +7,8 @@ export const SITE = {
 	title: 'betahero | inspire, educate and mentor through technology for the heroes of tomorrow',
 	description: 'a nonprofit designed to inspire, educate and mentor youth through technology for the heroes of tomorrow',
 
-	googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-	googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
+	googleAnalyticsId: "G-GJ39ZEDESJ", // or false,
+	googleSiteVerificationId: 'cqsr47x74v4mgs623n4mbnmbkt5i2slyy2gbjpb7bgogg5ugsssa',
 };
 
 export const BLOG = {
