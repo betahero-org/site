@@ -31,25 +31,23 @@ import { getPermalink, getBlogPermalink, getHomePermalink } from '~/utils/permal
 				<li>
 					<a
 						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-						href={getPermalink('useful-resources-to-create-websites', 'post')}
-						>Resources
-					</a>
+						href="/about/" title="About">About</a>
 				</li>
 				<li>
 					<a
 						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-						href={getBlogPermalink()}>Blog</a
+						href={getBlogPermalink()} title="Blog">Blog</a
 					>
 				</li>
 				<li>
 					<a
 						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-						href="#">Donate</a>
+						href="/donate/" title="Donate">Donate</a>
 				</li>
 				<li class="md:hidden">
 					<a
 						class="font-bold hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-						href="https://github.com/betahero-org/"
+						href="https://github.com/betahero-org/" target="_blank"
 						>Github
 					</a>
 				</li>
@@ -65,7 +63,7 @@ import { getPermalink, getBlogPermalink, getHomePermalink } from '~/utils/permal
 						<Icon name="tabler:rss" class="w-5 h-5" />
 					</a>
 					<a
-						href="https://github.com/betahero-org/"
+						href="https://github.com/betahero-org/" target="_blank"
 						class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
 						aria-label="BetaHero Github"
 					>

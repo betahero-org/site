@@ -1,0 +1,97 @@
+---
+import { Icon } from 'astro-icon';
+import { getHomePermalink } from '~/utils/permalinks';
+---
+
+<section>
+	<div class="max-w-6xl mx-auto px-4 sm:px-6 overflow-hidden">
+		<div class="py-12 md:py-20">
+			<div class="py-4 sm:py-6 lg:py-8">
+				<div class="flex flex-wrap md:-mx-8">
+					<div class="w-full lg:w-1/2 px-0 sm:px-8">
+						<div class="mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0">
+							<h2 class="mb-4 text-3xl lg:text-4xl font-bold font-heading">
+								Our Mission
+							</h2>
+
+							<p class="mb-8 text-xl text-gray-600 dark:text-slate-400">
+								From advancing human rights to creating more sustainable cities and everything in between, we work to mobilize people around causes that spur positive change. We work with non-profits to amplify their stories and impact through thoughtful strategic design. 
+							</p>
+
+							<div class="max-w-none flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
+								<div class="flex w-full sm:w-auto">
+									<a
+										class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800 sm:mb-0 w-full"
+										href="/donate/"
+										rel="noopener"
+									>
+										<Icon name="tabler:world" class="w-5 h-5 mr-1 -ml-1.5" /> Get involved
+									</a>
+								</div>
+								<div class="flex w-full sm:w-auto">
+									<a
+										class="btn text-white bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 w-full"
+										href="https://github.com/sponsors/betahero-org/"
+										target="_blank"
+									>
+										<Icon name="tabler:heart" class="w-5 h-5 mr-1 -ml-1.5" /> Sponsor on Github
+									</a>
+							
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w-full lg:w-1/2 px-0 sm:px-8">
+						<ul class="space-y-12">
+							<li class="flex md:-mx-4">
+								<div class="pr-4 sm:pl-4">
+									<span
+										class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold rounded-full bg-primary-50 text-primary-600"
+									>
+										1</span
+									>
+								</div>
+								<div class="px-4">
+									<h3 class="mb-4 text-xl font-semibold font-heading">Resources for Non Profits</h3>
+									<p class="text-gray-500 dark:text-gray-400">
+										We are creating a community for non-profits to gather resource and aid for their non-profit websites.
+									</p>
+								</div>
+							</li>
+							<li class="flex md:-mx-4">
+								<div class="pr-4 sm:pl-4">
+									<span
+										class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold rounded-full bg-primary-50 text-primary-600"
+									>
+										2</span
+									>
+								</div>
+								<div class="px-4">
+									<h3 class="mb-4 text-xl font-semibold font-heading">Inspiration and Motivation</h3>
+									<p class="text-gray-500 dark:text-gray-400">
+										We are here to not just help others, but to lift them up and support in everyway possiple. Sometimes all People need is a little inspiration.
+									</p>
+								</div>
+							</li>
+							<li class="flex md:-mx-4">
+								<div class="pr-4 sm:pl-4">
+									<span
+										class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold rounded-full bg-primary-50 text-primary-600"
+									>
+										3</span
+									>
+								</div>
+								<div class="px-4">
+									<h3 class="mb-4 text-xl font-semibold font-heading">Inspire, Educate, and Mentor</h3>
+									<p class="text-gray-500 dark:text-gray-400">
+										As an organization we aim to inspire, educate, and mentor youths through technology, classes, and programs.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

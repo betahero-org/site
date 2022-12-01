@@ -1,0 +1,73 @@
+---
+import { Icon } from 'astro-icon';
+
+const items = [
+	{
+		title: 'President',
+		description:
+			'Oversees the board\'s work and works with management team to make sure things are running smoothly and keep the board informed.',
+		icon: 'flat-color-icons:businessman',
+	},
+	{
+		title: 'Secretary',
+		description:
+			'The primary duty is to take and maintain accurate meeting minutes. Another duty is to monitor legal compliance with our bylaws and other matters.',
+		icon: 'flat-color-icons:inspection',
+	},
+	{
+		title: 'Treasurer',
+		description:
+			'Ensures the financial reports are continually updated, and they\'re accessible by the executive director and board members in a timely manner',
+		icon: 'flat-color-icons:calculator',
+	},
+	{
+		title: 'Programs',
+		description:
+			'Responsible for researching, planning, developing and implementing our organization\'s programs.',
+		icon: 'flat-color-icons:calendar',
+	},
+	{
+		title: 'Fundraising',
+		description:
+			'Develops fundraising strategies, formulates solicitation procedures, and oversees all fundraising activities.',
+		icon: 'flat-color-icons:bullish',
+	},
+	{
+		title: 'Ambassadorship',
+		description:
+			'Responsibilities include monitoring recruitment procedures, from sourcing to hiring, and finding potential candidates.',
+		icon: 'flat-color-icons:voice-presentation',
+	},
+];
+---
+
+<section class="relative">
+	<div class="absolute inset-0 bg-primary-50 dark:bg-slate-800 pointer-events-none mb-32" aria-hidden="true"></div>
+	<div class="relative max-w-6xl mx-auto px-4 sm:px-6">
+		<div class="py-4 pt-8 sm:py-6 lg:py-8 lg:pt-12">
+			<div class="mb-8 text-center">
+				<p class="text-base text-primary-600 dark:text-primary-200 font-semibold tracking-wide uppercase">Leadership</p>
+				<h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
+					Our Board
+				</h2>
+				<p class="max-w-3xl mx-auto text-center text-xl text-gray-600 dark:text-slate-400">
+					Full transparency, we have yet to incorperate because we have many positions to fill.
+				</p>
+			</div>
+			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start my-12 dark:text-white">
+				{
+					items.map(({ title, description, icon }) => (
+						<div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+							<div class="flex items-center mb-4">
+								<Icon name={icon} class="w-12 h-12" />
+
+								<div class="ml-4 text-xl font-bold">{title}</div>
+							</div>
+							<p class="text-gray-500 dark:text-gray-400 text-md">{description}</p>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</div>
+</section>
