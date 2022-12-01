@@ -1,9 +1,9 @@
-# 🚀 AstroWind
+# 🦸 BetaHero
 
 <img src="lighthouse-score.png" align="right"
-     alt="AstroWind Lighthouse Score" width="100" height="358">
+     alt="BetaHero Lighthouse Score" width="100" height="358">
 
-**AstroWind** is a free and open-source template to make your website using **Astro + Tailwind CSS**. Ready to start a new project and designed taking into account best practices.
+**BetaHero** is based of a free and open-source template using **Astro + Tailwind CSS**.
 
 ## Features
 
@@ -18,7 +18,7 @@
 
 <br>
 
-<img src="./screenshot.png" alt="AstroWind Theme Screenshot">
+<img src="./screenshot.png" alt="BetaHero Theme Screenshot">
 
 <br>
 
@@ -41,18 +41,9 @@
 
 <br>
 
-## Demo
-
-[🌀 astrowind.vercel.app](https://astrowind.vercel.app/) 
-
-<br>
-
-
 ## Getting started
 
 ### Project structure
-
-Inside AstroWind template, you'll see the following folders and files:
 
 ```
 /
@@ -240,10 +231,6 @@ Clone this repository on own GitHub account and deploy to Vercel:
 If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request. 
 That would be very useful for all of us and we would be happy to listen and take action.
 
-## Acknowledgements
-
-Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
-
 ## License
 
-**AstroWind** is licensed under the Unlicense license — see the [LICENSE](https://github.com/onwidget/astrowind/blob/main/LICENSE.md) file for details.
+**BetaHero** is licensed under MIT — see the [LICENSE](https://github.com/betahero_org/site/blob/main/LICENSE.md) file for details.
