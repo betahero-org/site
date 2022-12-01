@@ -231,4 +231,4 @@ That would be very useful for all of us and we would be happy to listen and take
 
 ## License
 
-**BetaHero** is licensed under MIT — see the [LICENSE](https://github.com/betahero_org/site/blob/main/LICENSE.md) file for details.
+**BetaHero** is licensed under MIT — see the [LICENSE](https://github.com/betahero-org/site/blob/main/LICENSE.md) file for details.
