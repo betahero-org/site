@@ -1,0 +1,12 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from '~/config.mjs';
+import Contribute from '~/components/widgets/Contribute.astro';
+
+const title = `About — ${SITE.name}`;
+---
+
+<Layout meta={{ title }}>
+	<Contribute />
+</Layout>
+
